@@ -161,6 +161,7 @@ pub fn from_dynamic(dyn_img: DynamicImage, is_srgb: bool) -> Image {
         TextureDimension::D2,
         data,
         format,
+        Default::default(),
     )
 }
 

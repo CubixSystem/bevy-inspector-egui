@@ -21,24 +21,24 @@ highlight_changes = []
 
 [dependencies]
 bevy-inspector-egui-derive = { version = "0.22.0", path = "../bevy-inspector-egui-derive" }
-bevy_app = { version = "0.12" }
-bevy_asset = { version = "0.12" }
-bevy_core = { version = "0.12" }
-bevy_ecs = { version = "0.12" }
-bevy_hierarchy = { version = "0.12" }
-bevy_log = { version = "0.12" }
-bevy_math = { version = "0.12" }
-bevy_reflect = { version = "0.12" }
-bevy_time = { version = "0.12" }
-bevy_utils = { version = "0.12" }
-bevy_window = { version = "0.12" }
+bevy_app = { path = "../../../bevy/crates/bevy_app" }
+bevy_asset = { path = "../../../bevy/crates/bevy_asset" }
+bevy_core = { path = "../../../bevy/crates/bevy_core" }
+bevy_ecs = { path = "../../../bevy/crates/bevy_ecs" }
+bevy_hierarchy = { path = "../../../bevy/crates/bevy_hierarchy" }
+bevy_log = { path = "../../../bevy/crates/bevy_log" }
+bevy_math = { path = "../../../bevy/crates/bevy_math" }
+bevy_reflect = { path = "../../../bevy/crates/bevy_reflect" }
+bevy_time = { path = "../../../bevy/crates/bevy_time" }
+bevy_utils = { path = "../../../bevy/crates/bevy_utils" }
+bevy_window = { path = "../../../bevy/crates/bevy_window" }
 
-bevy_core_pipeline = { version = "0.12" }
-bevy_pbr = { version = "0.12", optional = true }
-bevy_render = { version = "0.12" }
+bevy_core_pipeline = { path = "../../../bevy/crates/bevy_core_pipeline" }
+bevy_pbr = { path = "../../../bevy/crates/bevy_pbr", optional = true }
+bevy_render = { path = "../../../bevy/crates/bevy_render" }
 
-egui = "0.24"
-bevy_egui = "0.24"
+egui = { path = "../../../egui/crates/egui" }
+bevy_egui = { path = "../../../bevy_egui" }
 
 image = { version = "0.24", default-features = false }
 once_cell = "1.16"
@@ -46,7 +46,7 @@ pretty-type-name = "1.0"
 smallvec = "1.10"
 
 [dev-dependencies]
-bevy = { version = "0.12", default-features = false, features = [
+bevy = { path = "../../../bevy", default-features = false, features = [
     "x11",
     "bevy_winit",
     "bevy_pbr",
